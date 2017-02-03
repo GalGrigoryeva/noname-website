@@ -1,0 +1,39 @@
+.page-header {
+  background-color: #888888;
+}
+
+.page-header__entry {
+  margin-top: 52px;
+  padding: 80px 20px;
+  background-color: @bg-dark;
+
+  background-image: url("http://placehold.it/1000x665");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-header__title {
+  margin: 0;
+  padding: 0 30px;
+
+  font-size: 46px;
+  line-height: 50px;
+  font-weight: 400;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+@media @tablet-widths {
+  .page-header__entry {
+    padding: 160px 0;
+  }
+}
+
+@media @desktop-widths {
+  .page-header__title {
+    font-size: 66px;
+    line-height: 74px;
+  }
+}

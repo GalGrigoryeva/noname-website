@@ -1,0 +1,52 @@
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 640px;
+  }
+
+  @media @desktop-widths {
+    width: 960px;
+  }
+}
+
+.container-fluid() {
+  width: auto;
+
+  @media @tablet-widths {
+    width: 84%; /*640px / 768px ~= 84%*/
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media @desktop-widths {
+    width: 80%; /*960px / 1200px = 80%*/
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+}
+
+.placeholder(@rules) {
+    &::-webkit-input-placeholder {
+        @rules();
+    }
+    &:-moz-placeholder {
+        @rules();
+    }
+    &::-moz-placeholder {
+        @rules();
+    }
+    &:-ms-input-placeholder {
+        @rules();
+    }
+}
