@@ -1,12 +1,8 @@
-# barbershop-adaptive
- Верстка макета Barbershop.  
+# Noname adaptive website
 
- ## Особенности:  
- * Отзывчивая/адаптивная верстка    
- * Семантическая разметка   
- * Адаптивная графика, ретинизация   
- * Прогрессивное улучшение   
+## Features:  
+ * Responsive/Adaptive Web Design   
+ * Semantic HTML   
+ * Progressive Enhancement   
  * Mobile first     
- * БЭМ (Организация файловой системы, именование селекторов)   
- * Оптимизация загрузки контента
- * IE 9+   
+ * BEM
