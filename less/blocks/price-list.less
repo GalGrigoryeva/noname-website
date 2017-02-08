@@ -1,0 +1,172 @@
+.price-list {
+  padding: 40px 15px;
+  background: #f6f8fa;
+}
+
+.price-list__wrapper {
+  .container-fluid();
+}
+
+.price-list__title {
+  margin: 0;
+  margin-bottom: 53px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #222222;
+}
+
+.price-list__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.price-list__item {
+  display: block;
+  margin-bottom: 20px;
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+
+.price-list__item-link {
+  display: block;
+  width: 100%;
+  height: 550px;
+  padding: 40px 8%;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: #888888;
+  border: 1px solid #b4c5d6;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #ffffff;
+    border-color: @coral;
+    background-color: @coral;
+
+    i.fa-user,
+    i.fa-user-plus,
+    i.fa-puzzle-piece {
+      color: #ffffff;
+      opacity: 0.5;
+    }
+
+    .price-list__price-icon {
+      color: #ffffff;
+      opacity: 0.5;
+    }
+
+    .price-list__price {
+      color: #ffffff;
+    }
+  }
+}
+
+
+i.fa-user,
+i.fa-user-plus,
+i.fa-puzzle-piece {
+  display: inline-block;
+  margin-bottom: 40px;
+  font-size: 66px;
+  text-align: center;
+  color: #888888;
+  opacity: 0.2;
+}
+
+.price-list__item-name {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.price-list__more {
+  display: block;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.price-list__price-icon {
+  font-size: 66px;
+  color: @coral;
+  opacity: 0.2;
+}
+
+.price-list__price {
+  margin-bottom: 30px;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 120px;
+  color: @coral;
+}
+
+i.fa-long-arrow-right {
+  font-weight: 700;
+}
+
+.price-list__link {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  color: @coral;
+
+  &:hover {
+    color: #bd1d21;
+  }
+}
+
+.price-list__contact-us {
+  text-align: center;
+
+  .price-list__link {
+    display: inline-block;
+  }
+}
+
+@media @tablet-widths {
+  .price-list {
+    padding: 80px 0;
+  }
+
+  .price-list__title {
+    font-size: 46px;
+    line-height: 54px;
+  }
+}
+
+@media @desktop-widths {
+  .price-list {
+    padding: 80px 0;
+  }
+
+  .price-list__items {
+    display: table;
+  }
+
+  .price-list__item {
+    display: table-cell;
+  }
+
+  .price-list__price-icon {
+    font-size: 62px;
+  }
+
+  .price-list__price {
+    font-size: 88px;
+    line-height: 115px;
+    color: @coral;
+  }
+}
