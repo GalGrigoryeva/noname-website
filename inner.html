@@ -8,6 +8,7 @@
   <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
   <link rel="stylesheet" href="css/style.min.css">
   <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700" rel="stylesheet">
@@ -30,49 +31,48 @@
   </script>
 
   <header class="page-header">
-    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+    <nav class="main-nav  main-nav--closed">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="inner.html#price">Цены</a></li>
-            <li class="main-nav__item"><a href="index.html#registration">Регистрация</a></li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a>Купить аксессуары</a></li>
+          <li class="main-nav__item"><a href="index.html#registration">Регистрация</a></li>
+        </ul>
       </div>
     </nav>
     <div class="page-header__entry">
-      <h1 class="page-header__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+      <h1 class="page-header__title">Lorem ipsum dolor sit amet</h1>
     </div>
   </header>
 
   <main class="page-main">
-    <div class="widgets">
-      <ul class="widgets__list">
-        <li class="widgets__item">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-size="small">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-          </script>
-        </li>
-        <li class="widgets__item">
-          <div id="vk_like"></div>
-          <script type="text/javascript">
-            VK.Widgets.Like("vk_like", {type: "button", height: 18});
-          </script>
-        </li>
-        <li class="widgets__item">
-          <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
-        </li>
-      </ul>
-    </div>
-
     <section class="promo">
-      <h3 class="promo__title">Купить аксессуары для вашего мероприятия</h3>
-      <img src="#" alt="" class="promo__image">
-      <p class="promo__text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi molestiae odit vitae natus tenetur quos officiis inventore placeat dolorem alias distinctio debitis delectus, deleniti veritatis obcaecati. Nemo quaerat at doloribus.
-      </p>
-      <a href="index.htnl" class="promo__to-main btn"></a>
+      <div class="promo__wrapper">
+        <div class="widgets">
+          <ul class="widgets__list">
+            <li class="widgets__item">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-size="small">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+              </script>
+            </li>
+            <li class="widgets__item">
+              <div id="vk_like"></div>
+              <script type="text/javascript">
+                VK.Widgets.Like("vk_like", {type: "button", height: 18});
+              </script>
+            </li>
+            <li class="widgets__item">
+              <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+            </li>
+          </ul>
+        </div>
+        <h3 class="promo__title">Купить аксессуары для вашего мероприятия</h3>
+        <img src="http://placehold.it/1024x437" alt="" class="promo__image">
+        <p class="promo__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi molestiae odit vitae natus tenetur quos officiis inventore placeat dolorem alias distinctio debitis delectus, deleniti veritatis obcaecati. Nemo quaerat at doloribus.
+        </p>
+        <a href="index.html" class="btn promo__to-main">На главную</a>
+      </div>
     </section>
 
     <section class="check-in">
@@ -91,21 +91,25 @@
         <ul class="extra-nav__list">
           <li class="extra-nav__item">
             <a href="index.html#about" class="extra-nav__link">
+              <i class="fa fa-book" aria-hidden="true"></i>
               <p class="extra-nav__text">О мероприятии</p>
             </a>
           </li>
           <li class="extra-nav__item">
             <a href="index.html#faq" class="extra-nav__link">
+              <i class="fa fa-question" aria-hidden="true"></i>
               <p class="extra-nav__text">Часто задаваемые вопросы</p>
             </a>
           </li>
           <li class="extra-nav__item">
             <a href="index.html#price" class="extra-nav__link">
+              <i class="fa fa-money" aria-hidden="true"></i>
               <p class="extra-nav__text">Цена</p>
             </a>
           </li>
           <li class="extra-nav__item">
             <a href="index.html#contacts" class="extra-nav__link">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
               <p class="extra-nav__text">Контакты</p>
             </a>
           </li>
@@ -118,9 +122,15 @@
     <div class="page-footer__wrapper">
       <div class="social-links">
         <ul class="social-links__list">
-          <li class="social-link__item"><a href="#">Facebook</a></li>
-          <li class="social-link__item"><a href="#">Vkontakte</a></li>
-          <li class="social-link__item"><a href="#">Twitter</a></li>
+          <li class="social-link__item">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li class="social-link__item">
+            <a href="#"><i class="fa fa-vk"></i></a>
+          </li>
+          <li class="social-link__item">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
         </ul>
       </div>
       <div class="page-footer__copyright">
