@@ -1,0 +1,34 @@
+.social-links__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-link__item a {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 48px;
+  color: @coral;
+
+  &:hover {
+    color: #df2f32;
+  }
+}
+
+@media @tablet-widths {
+  .social-links {
+    margin-bottom: 60px;
+  }
+
+  .social-links__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-link__item a {
+    margin-bottom: 0;
+  }
+}
