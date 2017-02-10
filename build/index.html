@@ -5,9 +5,8 @@
   <title>Noname Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
@@ -268,7 +267,7 @@
             </li>
           </ul>
         </div>
-        <b class="faq__additional">Есть вопросы, на которые не нашли ответа? <a href="#" class="faq__link">Пишите</a>, ответим.</b>
+        <b class="faq__additional">Есть вопросы, на которые не нашли ответа? <a href="index.html#contacts" class="faq__link">Пишите</a>, ответим.</b>
       </div>
     </section>
 
@@ -278,7 +277,7 @@
         <h3 class="price-list__title">Стоимость участия</h3
         <ul class="price-list__items">
           <li class="price-list__item">
-            <a href="#" class="price-list__item-link">
+            <a href="#" class="price-list__item-link price-list__item-link--alone">
               <i class="fa fa-user" aria-hidden="true"></i>
               <h6 class="price-list__item-name">Один человек</h6>
               <span class="price-list__price"><sup class="price-list__price-icon"><i class="fa fa-rub" aria-hidden="true"></i></sup>5500</span>
@@ -287,7 +286,7 @@
             </a>
           </li>
           <li class="price-list__item">
-            <a href="#" class="price-list__item-link">
+            <a href="#" class="price-list__item-link price-list__item-link--couple">
               <i class="fa fa-user-plus" aria-hidden="true"></i> <i class="fa fa-user" aria-hidden="true"></i>
               <h6 class="price-list__item-name">Пара</h6>
               <span class="price-list__price"><sup class="price-list__price-icon"><i class="fa fa-rub" aria-hidden="true"></i></sup>9800</span>
@@ -296,7 +295,7 @@
             </a>
           </li>
           <li class="price-list__item">
-            <a href="#" class="price-list__item-link">
+            <a href="inner.html" class="price-list__item-link">
               <i class="fa fa-puzzle-piece" aria-hidden="true"></i>
               <h6 class="price-list__item-name">Аксессуары</h6>
               <div class="price-list__container">
@@ -308,9 +307,9 @@
             </a>
           </li>
         </ul>
-        <a href="#" class="price-list__link">Сводная таблица цен</a>
+        <a href="#" class="price-list__link price-list__link--table">Сводная таблица цен</a>
         <p class="price-list__contact-us">
-          Хотите уточнить цену, попросить скидку? <a href="#" class="price-list__link">Пишите на электропочту</a> или <a href="#" class="price-list__link">звоните</a>.
+          Хотите уточнить цену, попросить скидку? <a href="index.html#contacts" class="price-list__link">Пишите на электропочту</a> или <a href="index.html#contacts" class="price-list__link">звоните</a>.
         </p>
       </div>
     </section>
@@ -418,6 +417,131 @@
       </div>
     </div>
   </footer>
-  <!-- <script src="js/scripts.min.js"></script> -->
+  <div class="modal-content modal-content--prise-table">
+    <button class="modal-content__btn-exit" type="button" title="Exit">Exit</button>
+    <header class="modal-content__header">
+      <h4 class="modal-content__title">Сводная таблица цен</h4>
+    </header>
+    <table class="modal-content__table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Один посетитель</th>
+          <th>Пара</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Quisque ut odio suscipit</td>
+          <td>1000</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <td>Eleifend nisi volutpat</td>
+          <td>4000</td>
+          <td>5000</td>
+        </tr>
+        <tr>
+          <td>Tempus magna</td>
+          <td>6000</td>
+          <td>70000</td>
+        </tr>
+        <tr>
+          <td>Integer vel urna eros</td>
+          <td>8000</td>
+          <td>9000</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="modal-content__btn-close" type="button" title="Закрыть">Закрыть</button>
+  </div>
+
+  <div class="modal-content modal-content--prise-alone">
+    <button class="modal-content__btn-exit" type="button" title="Exit">Exit</button>
+    <header class="modal-content__header">
+      <h4 class="modal-content__title">Посещение события в одиночку</h4>
+      <p class="modal-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et magna efficitur ex facilisis lacinia sit amet tempus magna. Integer felis tortor, viverra non fermentum vitae, mattis at magna.</p>
+      <p class="modal-content__text">Quisque ut odio suscipit, eleifend nisi volutpat, tempus magna.</p>
+    </header>
+    <h4 class="modal-content__title">Цены</h4>
+    <p class="modal-content__text">Цены указаны за <strong>одного человека</strong></p>
+    <table class="modal-content__table">
+      <thead>
+        <tr>
+          <th>Часть мероприятия</th>
+          <th>Цена, руб.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Quisque ut odio suscipit</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td>Eleifend nisi volutpat</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <td>Tempus magna</td>
+          <td>3000</td>
+        </tr>
+        <tr>
+          <td>Integer vel urna eros</td>
+          <td>4000</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="modal-content__btn-close" type="button" title="Закрыть">Закрыть</button>
+  </div>
+
+  <div class="fixed-overlay fixed-overlay__modal">
+    <div class="modal">
+      <div class="modal-content modal-content--prise-couple">
+        <button class="modal-content__btn-exit" type="button" title="Exit">Exit</button>
+        <header class="modal-content__header">
+          <h4 class="modal-content__title">Посещение события в паре</h4>
+          <p class="modal-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et magna efficitur ex facilisis lacinia sit amet tempus magna. Integer felis tortor, viverra non fermentum vitae, mattis at magna.</p>
+          <ul class="modal-content__list">
+            <li class="modal-content__item">- Aliquam eu placerat nunc.</li>
+            <li class="modal-content__item">- In hac habitasse platea dictumst.</li>
+            <li class="modal-content__item">- Mauris mattis ex placerat ipsum eleifend, in auctor sapien consectetur.</li>
+            <li class="modal-content__item">- Nulla tempor diam vitae efficitur fringilla.</li>
+          </ul>
+        </header>
+        <h4 class="modal-content__title">Цены</h4>
+        <p class="modal-content__text">Цены указаны за <strong>пару</strong></p>
+        <table class="modal-content__table">
+          <thead>
+            <tr>
+              <th>Часть мероприятия</th>
+              <th>Цена, руб.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Quisque ut odio suscipit</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>Eleifend nisi volutpat</td>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <td>Tempus magna</td>
+              <td>3000</td>
+            </tr>
+            <tr>
+              <td>Integer vel urna eros</td>
+              <td>4000</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="modal-content__btn-close" type="button" title="Закрыть">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay"></div>
+  <script src="js/scripts.min.js"></script>
 </body>
 </html>

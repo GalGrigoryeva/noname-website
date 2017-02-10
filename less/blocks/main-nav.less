@@ -1,16 +1,13 @@
 .main-nav {
   position: fixed;
   top: 0;
-
   width: 100%;
   min-height: 40px;
   padding: 0 15px;
   box-sizing: border-box;
-
   border-bottom: 1px solid #000000;
   background-color: @bg-dark;
   color: #999999;
-
   z-index: 10;
 }
 
@@ -18,21 +15,16 @@
   position: absolute;
   right: 15px;
   top: 8px;
-
   width: 44px;
   height: 36px;
   padding: 0;
   box-sizing: border-box;
-
   font-size: 0;
-
   background-color: @bg-dark;
   cursor: pointer;
-
   border: 1px solid #333333;
   border-radius: 5px;
   outline: none;
-
   z-index: 20;
 
   &:hover {
@@ -49,10 +41,8 @@
   position: absolute;
   top: 10px;
   left: 10px;
-
   width: 22px;
   height: 2px;
-
   background-color: #ffffff;
   box-shadow:  0 6px 0 0 #ffffff,
                0 12px 0 0 #ffffff;
@@ -61,18 +51,15 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .main-nav__item a {
   display: block;
   height: 50px;
-  padding:  0 12px;
-
+  padding: 0 15px;
   font-size: 14px;
   line-height: 50px;
-
   color: #999999;
   text-decoration: none;
 
@@ -98,7 +85,7 @@
   }
 
   .main-nav__item--active a {
-    box-shadow: none;
+    box-shadow: none
   }
 
   .main-nav--closed .main-nav__item {
@@ -115,8 +102,11 @@
     right: 0;
     left: 0;
     z-index: 10;
-
     background-color: @bg-dark;
+  }
+
+  .main-nav--opened .main-nav__item a {
+    padding-left: 15px;
   }
 }
 
